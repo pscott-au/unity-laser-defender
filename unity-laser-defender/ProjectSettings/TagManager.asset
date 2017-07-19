@@ -41,15 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Friendlies
+  - name: EnemyProjectiles
     uniqueID: 3
     locked: 0
-  - name: Default
+  - name: Enemies
     uniqueID: 0
     locked: 0
-  - name: Default
+  - name: Friendly Projectiles
     uniqueID: 0
     locked: 0
-  - name: Default
+  - name: Player
     uniqueID: 0
+    locked: 0
+  - name: New Layer
+    uniqueID: 1300005787
     locked: 0

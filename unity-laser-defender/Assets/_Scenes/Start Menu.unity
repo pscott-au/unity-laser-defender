@@ -353,6 +353,10 @@ Prefab:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: bff69139f03364466894b9cc275029ae, type: 3}
+    - target: {fileID: 8200000, guid: 1d17c8accddfc43d593706f3365be8ab, type: 2}
+      propertyPath: m_Volume
+      value: 0.065
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1d17c8accddfc43d593706f3365be8ab, type: 2}
   m_IsPrefabParent: 0
@@ -851,6 +855,10 @@ Prefab:
     - target: {fileID: 400000, guid: fe9188b7c592e49b396b4f5e61d5a8ca, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fe9188b7c592e49b396b4f5e61d5a8ca, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fe9188b7c592e49b396b4f5e61d5a8ca, type: 2}

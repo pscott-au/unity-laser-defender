@@ -15,6 +15,9 @@ public class PlayerController : MonoBehaviour {
 
 	public float health = 150f;
 
+	public AudioClip fireSound;
+	public AudioClip deathSound;
+
 	// Use this for initialization
 	void Start () {
 		float distance = transform.position.z - Camera.main.transform.position.z;
@@ -30,6 +33,7 @@ public class PlayerController : MonoBehaviour {
 		GameObject beam =Instantiate(projectile, startPosition, Quaternion.identity ) as GameObject;
 		// beam.rigidbody2D.velocity = new Vector3 (0, projectileSpeed,0);
 		beam.GetComponent<Rigidbody2D>().velocity = new Vector3 (0, projectileSpeed,0);
+		AudioSource.PlayClipAtPoint (fireSound, transform.position);
 	}
 
 
@@ -64,12 +68,16 @@ public class PlayerController : MonoBehaviour {
 
 		Projectile missile = col.gameObject.GetComponent<Projectile> ();
 		if (missile) {
-			Debug.Log("Enemy hit by projectile");
+			//Debug.Log("Enemy hit by projectile");
 			health -= missile.GetDamage();
 			missile.Hit ();
 			// Debug.Log (health);
 			if (health <= 0f) {
-				Debug.Log (health);
+				AudioSource.PlayClipAtPoint (deathSound, transform.position);
+				//Debug.Log (health);
+
+				LevelManager man = GameObject.Find ("LevelManager").GetComponent<LevelManager> ();
+				man.LoadLevel ("Win Screen");
 				Destroy (gameObject);
 			}
 		}
