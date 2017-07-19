@@ -37,13 +37,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1889605886899112}
-  m_LocalRotation: {x: -0.06898796, y: 0.012662753, z: -0.17337924, w: 0.9823543}
-  m_LocalPosition: {x: -1.36, y: -0.3, z: 0}
+  m_LocalRotation: {x: -0.11079847, y: -0.12878947, z: 0.087244235, w: 0.9815933}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -7.5360003, y: 2.822, z: -20.204}
+  m_LocalEulerAnglesHint: {x: -11.247001, y: -16.111, z: 11.755}
 --- !u!50 &50776994075600478
 Rigidbody2D:
   serializedVersion: 4
